@@ -29,7 +29,7 @@ Sliding window checks the make sure that there are less than "limit" requests is
 - Set a "max length" on your keys: If the “key” for the lookup is based on user input you should set a “max length." The “max” is to prevent malicious actors from setting a large “key” that would affect lookup times.
 
 
-## references: 
+## References: 
 - https://blog.cloudflare.com/counting-things-a-lot-of-different-things	
 - https://konghq.com/blog/how-to-design-a-scalable-rate-limiting-algorithm/
 - https://hechao.li/2018/06/25/rate-limiter-part1/
