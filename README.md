@@ -12,7 +12,7 @@ I was unhappy with "edge" rate limiters because they lacked "context" (they were
 - Atomic: Both rate limiters make use of transactions to ensure atomicity and preventing race conditions when interfacing with Redis.
 
 
-## what is the difference between "fixed" and "sliding" windows?
+## What is the difference between "fixed" and "sliding" windows?
 *tl;dr* fixed window is susceptible to request "spikes" and sliding window is not.
 
 Fixed window checks to make sure that there are less than "limit" requests in a static window "period". That is, with a limit of X and a period of Y the rate limiter checks that there were less than X requests issued in _time_*Y.
