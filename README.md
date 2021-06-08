@@ -3,7 +3,7 @@ Centralized Redis Backed Rate Limiter
 
 
 ## Why a custom rate limiter?
-I was unhappy with "edge" rate limiters because they lacked "context" (they were keyed to ip) and the out of the recommended Django and Flask rate limiters because they fall short when used in environments with "load balanced" servers.
+"Edge" rate limiters lack "context" (they are mostly keyed to ip) and the recommended Django and Flask rate limiters fall short when used in environments with "load balanced" servers.
 
 
 ## Properties:
